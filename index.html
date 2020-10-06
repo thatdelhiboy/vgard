@@ -1,0 +1,1227 @@
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="en" class="wide wow-animation">
+    <head>
+    
+        <title>V-Guard Electrical Appliances</title>
+        <meta charset=UTF-8 /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"4575747e38",applicationID:"22719459"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+        <meta http-equiv=X-UA-Compatible content="IE=edge">
+         <link rel="preload" href="/ui/client/fonts/Soleto-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+         <link rel="preload" href="/ui/client/fonts/Soleto-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+         <link rel="preload" href="/ui/client/fonts/Soleto-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+         <link rel="preload" href="/ui/client/fonts/fontawesome-webfont.woff" as="font" type="font/woff" crossorigin="anonymous">
+                <meta name=title content=V-Guard Electrical Appliances >
+        <meta name=description content=V-Guard India manufactures and sells a wide range of consumer appliances such as voltage stabilizers, DUPS, Inverters, Inverter Batteries, Electric and Solar Water Heaters, Geysers, Inverter Batteries, Wires and Cables, Household Appliances, Induction Cooktops, mixer grinders, ceiling fans, domestic switches and gears for your home needs. V-Guard - The name you can trust! >
+        <meta name=keywords content=V-Guard voltage stabilizers, stabilizers, DUPS, Inverters, UPS, Stabilizer for home applianaces, Inverters for home appliances, Electric and Solar Water Heaters, water heaters, solar water heaters, water heater, Geysers, Induction Cooktop, mixer grinders, domestic switch gears, ceiling fans, pumps, water pumps,  water pump, electrical wire, wire manufacturer, electric water heater, water heater manufacturers, water pumps india. >
+            <meta http-equiv=CACHE-CONTROL content=NO-CACHE>
+        <meta http-equiv=EXPIRES content="01 Jan 1970 00:00:00 GMT">
+        <meta http-equiv=PRAGMA content=NO-CACHE>
+        <link rel=canonical href='https://www.vguard.in/'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel=stylesheet type=text/css>
+        <link rel="shortcut icon" href="https://www.vguard.in/ui/client/images/pin1.png" type=image/x-icon />
+    
+       
+       
+    
+        <script>(function (d, e, j, h, f, c, b) { d.GoogleAnalyticsObject = f; d[f] = d[f] || function () { (d[f].q = d[f].q || []).push(arguments) }, d[f].l = 1 * new Date(); c = e.createElement(j), b = e.getElementsByTagName(j)[0]; c.async = 1; c.src = h; b.parentNode.insertBefore(c, b) })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"); ga("create", "UA-40418155-2", "auto"); ga("send", "pageview");</script>
+    
+    <!-- Global site tag (gtag.js) - Google Ads: 865034738 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-865034738"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'AW-865034738');
+    </script>
+        <link rel="stylesheet" href="https://www.vguard.in/ui/client/css/style-new.css">
+        <link rel="stylesheet" href="https://www.vguard.in/ui/client/css/home-banner.css">
+        <!--[if lt IE 10]>
+        <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="httpqwertywindows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+        <script src="https://www.vguard.in/ui/client/scripts/html5shiv.min.js"></script>
+            <![endif]-->
+            
+    
+    </head>
+    <body >
+        <div class="page">
+            <div class="page-loader page-loader-variant-1">
+                <div>
+                    <a href="https://www.vguard.in/" class="brand brand-md brand-inverse"><img src="https://www.vguard.in/ui/client/images/vgurad-logo.jpg" alt="" width="145" height="30" /></a>
+                    <div class="page-loader-body">
+                        <div id="spinningSquaresG">
+                            <div id="spinningSquaresG_1" class="spinningSquaresG"></div>
+                            <div id="spinningSquaresG_2" class="spinningSquaresG"></div>
+                            <div id="spinningSquaresG_3" class="spinningSquaresG"></div>
+                            <div id="spinningSquaresG_4" class="spinningSquaresG"></div>
+                            <div id="spinningSquaresG_5" class="spinningSquaresG"></div>
+                            <div id="spinningSquaresG_6" class="spinningSquaresG"></div>
+                            <div id="spinningSquaresG_7" class="spinningSquaresG"></div>
+                            <div id="spinningSquaresG_8" class="spinningSquaresG"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <header class="page-head">
+                <div class="rd-navbar-wrap">
+                    <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-stick-up-clone="false" data-md-stick-up-offset="53px" data-lg-stick-up-offset="53px" data-md-stick-up="true" data-lg-stick-up="true" class="rd-navbar rd-navbar-corporate-light">
+                        <div class="bg-ebony-clay context-dark" style="background-color:#0d0d0d;">
+                            <div class="rd-navbar-inner" >
+                                <div class="rd-navbar-aside-wrap" >
+                                    <div class="rd-navbar-aside">
+                                        <div data-rd-navbar-toggle=".rd-navbar-aside" class="rd-navbar-aside-toggle"><span></span></div>
+                                        <div class="rd-navbar-aside-content">
+                                            <ul class="rd-navbar-aside-group list-units">
+                                                <li>
+                                                    <div class="unit unit-horizontal unit-spacing-xs unit-middle">
+                                                        <div class="unit-left"><span class="icon icon-xxs icon-primary fa-edit"></span></div>
+                                                        <div class="unit-body"><a href="https://www.vguard.in/thoughtful/" class="link-secondary" target="_blank">BRAND PHILOSOPHY</a></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="unit unit-horizontal unit-spacing-xs unit-middle">
+                                                        <div class="unit-left"><span class="icon icon-xxs icon-primary fa-users"></span></div>
+                                                        <div class="unit-body"> <a href="https://www.vguard.in/home/contact-us" class="link-secondary">CONTACT US</a>
+                                                        <!--<a href="https://www.vguard.in/home/customer-care" class="link-secondary">CUSTOMER CARE</a>--></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="unit unit-horizontal unit-spacing-xs unit-middle">
+                                                        <div class="unit-left"><span class="icon icon-xxs icon-primary fa-download"></span></div>
+                                                        <div class="unit-body"><a href="https://www.vguard.in/investor-relations/corporate-governance" class="link-secondary">INVESTOR RELATIONS</a></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="unit unit-horizontal unit-spacing-xs unit-middle">
+                                                        <div class="unit-left"><span class="icon icon-xxs icon-primary fa-arrow-circle-right"></span></div>
+                                                        <div class="unit-body"><a href="https://www.vguard.in/careers/message-from-the-hr-desk" class="link-secondary">CAREERS</a></div>
+                                                    </div>
+                                                </li>
+                                                
+                                                <li>
+                                                    <div class="unit unit-horizontal unit-spacing-xs unit-middle">
+                                                        <div class="unit-left"><span class="icon icon-xxs icon-primary fa-search-plus" id="search_header"></span></div>
+                                                        <div class="unit-body"><input type="text" id="search" placeholder="SEARCH" class="nav-search">													
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            
+                                                    <li style="margin-right:10px;vertical-align:middle; display:inline;">
+                                                        <a href="https://www.facebook.com/VGuardOnline" class="icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-facebook" target="_blank"></a>
+                                                    </li>
+                                                    <li style="margin-right:10px;vertical-align:middle;display:inline;">
+                                                        <a href="https://twitter.com/VGuardOfficial" class="icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-twitter" target="_blank"></a>
+                                                    </li>
+                                                    <li style="margin-right:10px;vertical-align:middle;display:inline;">
+                                                        <a href="https://www.youtube.com/user/VguardOnline" class="icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-youtube" target="_blank"></a>
+                                                    </li>
+                                                    <li style="margin-right:10px;vertical-align:middle;display:inline;">
+                                                        <a href="https://www.linkedin.com/company/v-guard" class="icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-linkedin" target="_blank"></a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rd-navbar-inner">
+                            <div class="rd-navbar-group">
+                                <div class="rd-navbar-panel">
+                                    <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
+                                    <a class="vgurad-logo-link" href='https://www.vguard.in/'><img src="https://www.vguard.in/ui/client/images/vguard-logo.jpg" alt="V-Guard Industries" title="V-Guard Industries" class="vgurad-logo"></a>
+                                </div>
+                                <div class="rd-navbar-group-asside">
+                                    <div class="rd-navbar-nav-wrap">
+                                        <div class="rd-navbar-nav-inner">
+                                            <ul class="rd-navbar-nav">
+                                                
+                                                <li>
+                                                 <a  href="#">About V-GUARD</a>
+                                                    
+                                                    <ul class="rd-navbar-dropdown">
+                                                    <li><a href="https://www.vguard.in/thoughtful" class="nav-padding" target="_blank">BRAND Philosophy</a></li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/about-us/story" class="nav-padding">V-GUARD STORY</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/about-us/vision-mission" class="nav-padding">VISION & MISSION</a>
+                                                        </li>
+                                                        <!--<li>
+                                                            <a href="https://www.vguard.in/about-us/brand-philosophy" class="nav-padding">Brand Philosophy</a>
+                                                        </li>-->
+                                                        <li>
+                                                            <a href="https://www.vguard.in/about-us/founder-profile" class="nav-padding">FOUNDER'S PROFILE</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/about-us/milestones" class="nav-padding">MILESTONES</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/about-us/managing-directors-message" class="nav-padding">MANAGING DIRECTOR'S MESSAGE</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/about-us/leadership" class="nav-padding">LEADERSHIP</a>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                 <a  href="#">Products</a>
+                                                    <ul class="rd-navbar-megamenu">
+                                                        <li><a href="https://www.vguard.in/products/voltage-stabilizers">
+                                                            <img src="https://www.vguard.in/ui/client/images/thumb/icon-voltage-stabalizer.png">
+                                                            <h5 class="rd-megamenu-header">Voltage Stabilizers</h5></a>
+                                                        </li>
+                                                        <li><a href="https://www.vguard.in/products/inverter-dups-solar-power-systems-inverter-batteries">
+                                                            <img src="https://www.vguard.in/ui/client/images/thumb/icon-invertyor.png">
+                                                            <h5 class="rd-megamenu-header">Inverter, DUPS, Solar Power Systems & Inverter Batteries</h5></a>
+    
+                                                            </li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/products/electric-solar-water-heaters">
+                                                                <img src="https://www.vguard.in/ui/client/images/thumb/icon-water-heater.png">
+                                                                <h5 class="rd-megamenu-header">Electric, Solar & Heat Pump Water Heaters</h5>
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/products/wires-cables">
+                                                                <img src="https://www.vguard.in/ui/client/images/thumb/icon-wires.png">
+                                                                <h5 class="rd-megamenu-header">Wires & Cables</h5>
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/products/fans">
+                                                                <img src="https://www.vguard.in/ui/client/images/thumb/icon-fan.png">
+                                                                <h5 class="rd-megamenu-header">Fans</h5></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/products/vguard-kitchen-appliances">
+    
+                                                                <img src="https://www.vguard.in/ui/client/images/thumb/icon-kitchen.png">
+                                                                <h5 class="rd-megamenu-header">Kitchen Appliances</h5>
+                                                        </a>
+                                                        </li>
+                                                         <!--<li>
+                                                            <a href="https://www.vguard.in/products/mixer-grinders">
+    
+                                                                <img src="https://www.vguard.in/ui/client/images/thumb/icon-mixie.png">
+                                                                <h5 class="rd-megamenu-header">Mixer Grinders</h5>
+                                                        </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/products/induction-cooktops">
+                                                                <img src="https://www.vguard.in/ui/client/images/thumb/icon-induction.png">
+                                                                <h5 class="rd-megamenu-header">Induction Cooktops</h5>
+                                                        </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/products/gas-stoves">
+                                                                <img src="https://www.vguard.in/ui/client/images/thumb/icon-gas-stoves.png">
+                                                                <h5 class="rd-megamenu-header">Gas Stoves</h5>
+                                                        </a>
+                                                        </li>-->
+                                                        
+                                                        <li>
+                                                            <a href="https://www.vguard.in/products/pumps">
+                                                                <img src="https://www.vguard.in/ui/client/images/thumb/icon-pumps.png">
+                                                                <h5 class="rd-megamenu-header">Pumps</h5>
+                                                                </a></li>
+                                                        
+                                                        <li>
+                                                            <a href="https://www.vguard.in/products/domestic-switch-gears">
+                                                                <img src="https://www.vguard.in/ui/client/images/thumb/icon-switch.png">
+                                                                <h5 class="rd-megamenu-header">Domestic Switch Gears</h5>
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/products/modular-switches">
+                                                                <img src="https://www.vguard.in/ui/client/images/thumb/icon-modular-switch.png">
+                                                                <h5 class="rd-megamenu-header">Modular Switches</h5>
+                                                                </a>
+                                                        </li>
+                                                        <!--<li>
+                                                            <a href="https://www.vguard.in/products/rice-cookers">
+                                                                <img src="https://www.vguard.in/ui/client/images/thumb/icon-rice-cooker.png">
+                                                                <h5 class="rd-megamenu-header">Rice Cookers</h5>
+                                                        </a>
+                                                        </li>-->
+                                                        <li>
+                                                            <a href="https://www.vguard.in/products/air-coolers">
+                                                                <img src="https://www.vguard.in/ui/client/images/thumb/icon-air-cooler.png">
+                                                                <h5 class="rd-megamenu-header">Air Coolers</h5>
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/products/others">
+                                                                <img src="https://www.vguard.in/ui/client/images/thumb/icon-others.png">
+                                                                <h5 class="rd-megamenu-header">Others</h5>
+                                                                </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                   <a  href="https://www.vguard.in/home/dealer-service-network">DEALER &amp; SERVICE NETWORK</a>
+                                                </li>
+                                                <li>
+                                                    <a  href="#">CSR</a>
+                                                    <ul class="rd-navbar-dropdown">
+                                                        <!--<li>
+                                                            <a href="https://www.vguard.in/CSR/women-empowerment" class="nav-padding">WOMEN EMPOWERMENT</a>
+                                                        </li>-->
+                                                        <li>
+                                                            <a href="https://www.vguard.in/CSR/healthcare-programmes" class="nav-padding">HEALTH CARE PROGRAMMES</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/CSR/educare-and-skill-development" class="nav-padding">EDU-CARE AND SKILL DEVELOPMENT</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/CSR/build-india" class="nav-padding">BUILD INDIA</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/uploads/downloads/CSR_Policy.pdf" class="nav-padding" download>CSR POLICY</a>
+                                                        </li>
+    <li><a href="https://www.vguard.in/uploads/downloads/CSR-Report-2019-20.pdf" class="nav-padding" download>CSR REPORT 19-20</a></li> 
+    <li><a href="https://www.vguard.in/uploads/downloads/CSR-Anual-Report-2018-19.pdf" class="nav-padding" download>CSR REPORT 18-19</a></li> 
+                                                        <li><a href="https://www.vguard.in/uploads/downloads/CSR-Annual-Report-2017-18.pdf" class="nav-padding" download>CSR REPORT 17-18</a></li> 
+                                                           <li><a href="https://www.vguard.in/uploads/downloads/CSR-Report-2016-17.pdf" class="nav-padding" download>CSR REPORT 16-17</a></li> 
+                                                            <li><a href="https://www.vguard.in/uploads/downloads/CSR-Report-FY-15-16.pdf" class="nav-padding" download>CSR REPORT 15-16</a></li>
+                                                        
+    
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a  href="https://www.vguard.in/home/faq">FAQs</a>
+                                                </li>
+                                                <li>
+                                                    <a  href="https://www.vguard.in/home/customer-care">CUSTOMER CARE</a>
+                                                    
+                                                    <ul class="rd-navbar-dropdown">
+                                                        <li>
+                                                            <!--<a href="#" id="CusCar"  class="nav-padding">CUSTOMER CARE HOME</a>-->
+                                                            <a href="https://www.vguard.in/home/customer-care" class="nav-padding">CUSTOMER CARE HOME</a>
+                                                        </li>
+                                                         <li>
+                                                            <!--<a href="#" id="RegCom" class="nav-padding">REGISTER COMPLAINT</a>-->
+                                                            <a href="https://www.vguard.in/home/register-complaint" class="nav-padding">REGISTER COMPLAINT</a>
+                                                        </li>
+                                                        <li>
+                                                            <!--<a href="#" id="ProEnq" class="nav-padding">PRODUCT ENQUIRY</a>-->
+                                                            <a href="https://www.vguard.in/home/product-enquiry" class="nav-padding">PRODUCT ENQUIRY</a>
+                                                        </li>
+                                                        <li>
+                                                            <!--<a href="#" id="RegPro" class="nav-padding">REGISTER PRODUCT</a>-->
+                                                            <a href="https://www.vguard.in/home/register-product" class="nav-padding">REGISTER PRODUCT</a>
+                                                        </li>
+                                                        <li>
+                                                            <!--<a href="#" id="InsReq" class="nav-padding">INSTALLATION REQUEST</a>-->
+                                                            <a href="https://www.vguard.in/home/product-installation" class="nav-padding">INSTALLATION REQUEST</a>
+                                                        </li>
+                                                        <li>
+                                                            <!--<a href="#" id="proAut" class="nav-padding">PRODUCT AUTHENTICATION</a>-->
+                                                            <a href="https://www.vguard.in/home/product-genuine" class="nav-padding">PRODUCT AUTHENTICATION</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/home/contact-us" class="nav-padding">CONTACT US</a>
+                                                        </li>
+                                                        
+                                                        </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--<div class="rd-navbar-search">
+                                        <form action="search-results.html" method="GET" data-search-live="rd-search-results-live" data-search-live-count="6" class="rd-search">
+                                            <div class="rd-search-inner">
+                                                <div class="form-group">
+                                                    <label for="rd-search-form-input" class="form-label">Search...</label>
+                                                    <input id="rd-search-form-input" type="text" name="s" autocomplete="off" class="form-control">
+                                                </div>
+                                                <button type="submit" class="rd-search-submit"></button>
+                                            </div>
+                                            <div id="rd-search-results-live" class="rd-search-results-live"></div>
+                                        </form>
+                                        <button data-rd-navbar-toggle=".rd-navbar-search, .rd-navbar-search-wrap" class="rd-navbar-search-toggle"></button>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                            <div class="row">
+                     <div class="col-md-12">
+                        <div class="search-mobile"><input type="text" id="search1" placeholder="Search" class="nav-search"> &nbsp; <button id='search_header1'>Go</button></div>
+                    </div>
+                </div>
+            </header>
+            <div class="navex bse" style=float:left;font-size:75%>
+                                    </div>
+            
+            <div class="popdemo col-md-10" style=display:none>
+                <div class=row>
+                                    <a href=
+                        https://www.vguard.in/products/voltage-stabilizers class=demolink>
+                        <div class="col-md-2 pdt_drop_holder">
+                            <div class=pdtdrop>
+                                <img width="125px" height="100px" src=https://www.vguard.in/uploads/category/voltage_stabiliser_logo_2.png alt=V-Guard Voltage Stabilizers title=V-Guard Voltage Stabilizers>
+                                <p class=align-center>Voltage Stabilizers</p>
+                            </div>
+                        </div>
+                    </a>
+                                    <a href=
+                        https://www.vguard.in/products/inverter-dups-solar-power-systems-inverter-batteries class=demolink>
+                        <div class="col-md-2 pdt_drop_holder">
+                            <div class=pdtdrop>
+                                <img width="125px" height="100px" src=https://www.vguard.in/uploads/category/ups_logo_1.png alt=V-Guard Inverter, DUPS, Solar Power Systems & Inverter Batteries title=V-Guard Inverter, DUPS, Solar Power Systems & Inverter Batteries>
+                                <p class=align-center>Inverter, DUPS, Solar Power Systems & Inverter Batteries</p>
+                            </div>
+                        </div>
+                    </a>
+                                    <a href=
+                        https://www.vguard.in/products/electric-solar-water-heaters class=demolink>
+                        <div class="col-md-2 pdt_drop_holder">
+                            <div class=pdtdrop>
+                                <img width="125px" height="100px" src=https://www.vguard.in/uploads/category/water_heater_pdt_logo_3.png alt=V-Guard Electric, Solar & Heat Pump Water Heaters title=V-Guard Electric, Solar & Heat Pump Water Heaters>
+                                <p class=align-center>Electric, Solar & Heat Pump Water Heaters</p>
+                            </div>
+                        </div>
+                    </a>
+                                    <a href=
+                        https://www.vguard.in/products/fans class=demolink>
+                        <div class="col-md-2 pdt_drop_holder">
+                            <div class=pdtdrop>
+                                <img width="125px" height="100px" src=https://www.vguard.in/uploads/category/fan_pdt_logo_1.png alt=V-Guard Fans title=V-Guard Fans>
+                                <p class=align-center>Fans</p>
+                            </div>
+                        </div>
+                    </a>
+                                    <a href=
+                        https://www.vguard.in/products/pumps class=demolink>
+                        <div class="col-md-2 pdt_drop_holder">
+                            <div class=pdtdrop>
+                                <img width="125px" height="100px" src=https://www.vguard.in/uploads/category/pumps_logo.png alt=V-Guard Pumps title=V-Guard Pumps>
+                                <p class=align-center>Pumps</p>
+                            </div>
+                        </div>
+                    </a>
+                                    <a href=
+                        https://www.vguard.in/products/wires-cables class=demolink>
+                        <div class="col-md-2 pdt_drop_holder">
+                            <div class=pdtdrop>
+                                <img width="125px" height="100px" src=https://www.vguard.in/uploads/category/wiring_cables_logo_1.png alt=V-Guard Wires & Cables title=V-Guard Wires & Cables>
+                                <p class=align-center>Wires & Cables</p>
+                            </div>
+                        </div>
+                    </a>
+                                    <a href=
+                        https://www.vguard.in/products/domestic-switch-gears class=demolink>
+                        <div class="col-md-2 pdt_drop_holder">
+                            <div class=pdtdrop>
+                                <img width="125px" height="100px" src=https://www.vguard.in/uploads/category/switchgear_logo_1.png alt=V-Guard Domestic Switch Gears title=V-Guard Domestic Switch Gears>
+                                <p class=align-center>Domestic Switch Gears</p>
+                            </div>
+                        </div>
+                    </a>
+                                    <a href=
+                        https://www.vguard.in/products/others class=demolink>
+                        <div class="col-md-2 pdt_drop_holder">
+                            <div class=pdtdrop>
+                                <img width="125px" height="100px" src=https://www.vguard.in/uploads/category/others_logo_4.png alt=V-Guard Others title=V-Guard Others>
+                                <p class=align-center>Others</p>
+                            </div>
+                        </div>
+                    </a>
+                                    <a href=
+                        https://www.vguard.in/products/air-coolers class=demolink>
+                        <div class="col-md-2 pdt_drop_holder">
+                            <div class=pdtdrop>
+                                <img width="125px" height="100px" src=https://www.vguard.in/uploads/category/. alt=V-Guard Air Coolers title=V-Guard Air Coolers>
+                                <p class=align-center>Air Coolers</p>
+                            </div>
+                        </div>
+                    </a>
+                                    <a href=
+                        https://www.vguard.in/products/vguard-kitchen-appliances class=demolink>
+                        <div class="col-md-2 pdt_drop_holder">
+                            <div class=pdtdrop>
+                                <img width="125px" height="100px" src=https://www.vguard.in/uploads/category/kitchen.jpg alt=V-Guard Kitchen Appliances title=V-Guard Kitchen Appliances>
+                                <p class=align-center>Kitchen Appliances</p>
+                            </div>
+                        </div>
+                    </a>
+                                    <a href=
+                        https://www.vguard.in/products/modular-switches class=demolink>
+                        <div class="col-md-2 pdt_drop_holder">
+                            <div class=pdtdrop>
+                                <img width="125px" height="100px" src=https://www.vguard.in/uploads/category/matteo-mettalic-silver-sm.jpg alt=V-Guard Modular Switches title=V-Guard Modular Switches>
+                                <p class=align-center>Modular Switches</p>
+                            </div>
+                        </div>
+                    </a>
+                                </div>
+            </div>
+              <!-- Google Tag Manager -->
+                        <script>(function (w, d, s, l, i) {
+                        w[l] = w[l] || []; w[l].push({
+                        'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                        }); var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+                        })(window, document, 'script', 'dataLayer', 'GTM-MR9MMPR');</script>
+                        <!-- End Google Tag Manager -->
+    
+    
+    
+    
+                        <!-- Google Tag Manager (noscript) -->
+                        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MR9MMPR"
+                        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+                        <!-- End Google Tag Manager (noscript) -->
+    
+    <style>
+      .slider-content-container{position:absolute;top:5%;width:100%;text-align:center;}
+    slider .item h1{color:#111;border-bottom:none;font-size:2.5em;text-transform:uppercase;font-family:SoletoBold;line-height:1em}
+    slider .item h2{color:#111;text-align:center;font-size:1.25em;margin-top:10px;}
+    
+    h2:before,
+    h2:after {
+      background-color: #000;
+      content: "";
+      display: inline-block;
+      height: 4px;
+      position: relative;
+      vertical-align: middle;
+      width: 30px;
+    }
+    
+    h2:before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+    
+    h2:after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+    @media (max-width: 480px) {
+      slider .item h1{font-size:1.5em;}
+      slider .item h2{font-size:.7em;}
+    }
+    </style>  
+    
+    <!-- owl          -->
+              <link rel="stylesheet" href="/ui/client/css/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="/ui/client/css/owl/owl.theme.default.min.css">
+    <input type="hidden" id="refreshed" value="no">
+    
+      <slider >
+    
+          <div class="owl-carousel owl-theme">
+              <a href="/browse-products?utm_source=Website&utm_medium=AllProducts&utm_campaign=TrackBanner">
+            <div class="item">
+            <picture>
+              <source class="owl-lazy" media="(max-width: 480px)" data-srcset="/ui/client/images/compressed/vguard-all-products-mob.jpg" />
+                <img class="owl-lazy" data-src="/ui/client/images/compressed/vguard-all-products.jpg" alt="Vguard Products" />
+                </picture>  
+              <div class="slider-content-container">
+                <h1>Bring home a better tomorrow</h1>
+            <h2>With V-Guard's Products</h2>
+              </div>
+              </div>
+                </a>
+            <a href="/products/inverter-dups-solar-power-systems-inverter-batteries?utm_source=Website&utm_medium=Inverter&utm_campaign=TrackBanner">
+              <div class="item">
+                <picture>
+                  <source class="owl-lazy" media="(max-width: 480px)" data-srcset="/ui/client/images/compressed/vguard-inverter-mob.jpg" />
+                  <img class="owl-lazy" data-src="/ui/client/images/compressed/vguard-inverter.jpg" alt="Vguard Inverters" />
+                </picture>
+                <div class="slider-content-container">
+                  <h1>Beat The Interruptions</h1>
+                  <h2>With V-Guard's Smart Inverters</h2>
+                </div>
+              </div>
+            </a>
+            <!--<a href="/products/fans">
+              <div class="item">
+                <picture>
+                  <source class="owl-lazy" media="(max-width: 480px)" data-srcset="/ui/client/images/compressed/vguard-fan-mob.jpg" />
+                  <img class="owl-lazy" data-src="/ui/client/images/compressed/vguard-fan.jpg" alt="Vguard Fans" />
+                </picture>
+                <div class="slider-content-container">
+                  <h1>Hawa se zyada</h1>
+                  <h2>With V-Guard's Fans</h2>
+                </div>
+              </div>
+            </a>
+            <a href="/products/pumps">
+              <div class="item">
+                <picture>
+                  <source class="owl-lazy" media="(max-width: 480px)" data-srcset="/ui/client/images/compressed/vguard-pump-mob.jpg" />
+                  <img class="owl-lazy" data-src="/ui/client/images/compressed/vguard-pump.jpg" alt="Vguard Pumps" />
+                </picture>
+                <div class="slider-content-container">
+                  <h1>Live Life Full Tank</h1>
+                  <h2>With V-Guard's Water Pumps</h2>
+                </div>
+              </div>
+            </a>-->
+          </div>
+         
+      </slider>
+      
+      <!-- Banner ends -->
+      
+      <!-- Products -->
+      <div class="product-section-home">
+        <div class="category_list">
+    
+          <div class="category_block"   onmouseover="OnMouseIn (1)" id="categoryBlock1">
+            
+            <div class="category_item">
+              <a href="https://www.vguard.in/products/voltage-stabilizers">
+                <img src="https://www.vguard.in/ui/client/images/v2/home-icon-voltage-stabalizer.png" alt="Voltage Stabilizers" />
+                <h4 class="category_item_text" id="category1">Voltage Stabilizers</h4>
+               </div>
+          </a>
+      </div>
+    
+          
+          <div class="category_block" onmouseover="OnMouseIn (2)" id="categoryBlock2">
+            <div class="category_item">
+    
+              <a href="https://www.vguard.in/products/inverter-dups-solar-power-systems-inverter-batteries">
+                <img src="https://www.vguard.in/ui/client/images/v2/home-icon-invertyor.png" alt="Inverters, DUPS, Solar Power System & Batteries" />
+    
+                  <h4 class="category_item_text" id="category2">Inverters, DUPS, Solar Power System & Batteries</h4>
+    
+    
+              </a>
+    
+            </div>
+          </div>
+    
+          <div class="category_block" onmouseover="OnMouseIn (3)" id="categoryBlock3">
+            <div class="category_item">
+    
+              <a href="https://www.vguard.in/products/electric-solar-water-heaters"><img src="https://www.vguard.in/ui/client/images/v2/home-icon-water-heater.png" alt="Electric & Solar Water Heaters" />
+    
+                <h4 class="category_item_text" id="category3">Electric, Solar & Heat Pump Water Heaters</h4>
+    
+              </a>
+    
+            </div>
+          </div>
+    <div class="category_block" onmouseover="OnMouseIn (9)" id="categoryBlock9">
+            <div class="category_item">
+    
+              <a href="https://www.vguard.in/products/wires-cables"><img src="https://www.vguard.in/ui/client/images/v2/home-icon-wires.png" alt="Wires & Cables" />
+              
+    
+                <h4 class="category_item_text" id="category9">Wires & Cables</h4>
+    
+              </a>
+    
+            </div>
+          </div>
+          <div class="category_block" onmouseover="OnMouseIn (4)" id="categoryBlock4">
+            <div class="category_item">
+    
+              <a href="https://www.vguard.in/products/fans"><img src="https://www.vguard.in/ui/client/images/v2/home-icon-fan.png" alt="Fans" />
+              
+                <h4 class="category_item_text" id="category4">Fans</h4>
+              </a>
+    
+            </div>
+          </div>
+    
+          <div class="category_block" onmouseover="OnMouseIn (5)" id="categoryBlock5">
+            <div class="category_item">
+    
+              <a href="https://www.vguard.in/products/vguard-kitchen-appliances"><img src="https://www.vguard.in/ui/client/images/v2/home-icon-kitchen-appliance.png" alt="Kitchen Appliances" />
+    
+    
+                <h4 class="category_item_text" id="category5">Kitchen Appliances</h4>
+    
+    
+              </a>
+    
+            </div>
+          </div>
+          <!--
+          <div class="category_block" onmouseover="OnMouseIn (6)" id="categoryBlock6">
+            <div class="category_item">
+    
+              <a href="https://www.vguard.in/products/induction-cooktops"><img src="https://www.vguard.in/ui/client/images/v2/home-icon-induction.png" alt="Induction Cooktops" />
+              
+              <h4 class="category_item_text" id="category6">Induction Cooktops</h4>
+    
+              </a>
+    
+            </div>
+          </div>
+          <div class="category_block" onmouseover="OnMouseIn (7)" id="categoryBlock7">
+            <div class="category_item">
+    
+              <a href=""
+                https://www.vguard.in/products/induction-cooktops"><img src="https://www.vguard.in/ui/client/images/v2/home-icon-gas-stoves.png" alt="Gas Stove" />
+    
+                <h4 class="category_item_text" id="category7">Gas Stove</h4>
+    
+              </a>
+    
+            </div>
+          </div>
+    -->        
+    
+          <div class="category_block" onmouseover="OnMouseIn (8)" id="categoryBlock8">
+            <div class="category_item">
+    
+              <a href="https://www.vguard.in/products/pumps"><img src="https://www.vguard.in/ui/client/images/v2/home-icon-pumps.png" alt="Pumps" />
+              
+                <h4 class="category_item_text" id="category8">Pumps</h4>
+    
+              </a>
+    
+            </div>
+          </div>
+    
+          
+    
+          <div class="category_block" onmouseover="OnMouseIn (10)" id="categoryBlock10">
+            <div class="category_item">
+    
+              <a href="https://www.vguard.in/products/domestic-switch-gears"><img src="https://www.vguard.in/ui/client/images/v2/home-icon-switch.png" alt="Domestic Switch Gears" />
+    
+                <h4 class="category_item_text" id="category10">Domestic Switch Gears</h4>
+    
+              </a>
+    
+            </div>
+          </div>
+          
+          <div class="category_block" onmouseover="OnMouseIn (12)" id="categoryBlock12">
+            <div class="category_item">
+    
+              <a href="https://www.vguard.in/products/modular-switches"><img src="https://www.vguard.in/ui/client/images/v2/home-modular-switch.png" alt="Modular Switches" />
+    
+                <h4 class="category_item_text" id="category12">Modular Switches</h4>
+    
+              </a>
+    
+            </div>
+          </div>
+      <div class="category_block dotted-right" onmouseover="OnMouseIn (13)" id="categoryBlock13">
+            <div class="category_item">
+    
+              <a href="/collections/hand-tools" class="logo-bar__link">
+                <span class="category_icon">
+    
+                  <a href="https://www.vguard.in/products/air-coolers"><img src="https://www.vguard.in/ui/client/images/v2/home-icon-air-coolers.png" alt="Air Cooler" />
+                  </span>
+    
+                <h4 class="category_item_text" id="category11">Air Coolers</h4>
+              </a>
+    
+            </div>
+          </div>
+          <div class="category_block dotted-right" onmouseover="OnMouseIn (11)" id="categoryBlock11">
+            <div class="category_item">
+    
+              <a href="/collections/hand-tools" class="logo-bar__link">
+                <span class="category_icon">
+    
+                  <a href="https://www.vguard.in/products/others"><img src="https://www.vguard.in/ui/client/images/v2/home-icon-others.png" alt="Others" />
+                </span>
+    
+                <h4 class="category_item_text" id="category11">Others</h4>
+              </a>
+    
+            </div>
+          </div>
+          
+          
+          
+        </div>
+    
+    
+      </div>
+      
+      
+      <section class="section-50 section-sm-90 brandPhilosophySection">
+        <div class="shell text-center">
+          <h1 class="orange">V-Guard Story</h1>
+          <div class="range range-xs-center offset-top-40">
+            <div class="cell-xs-10 cell-sm-6 cell-md-6 height-fill">
+              <article class="icon-box" id="legacyBox">
+                <div class="box-top">
+                  <div class="box-icon">
+                    <span class="icon icon-primary">
+                      <a href="https://www.vguard.in/about-us/story"><img src="https://www.vguard.in/ui/client/images/legacy.png" alt="Our Legacy" data-src="https://www.vguard.in/ui/client/images/legacy.png" data-hover="https://www.vguard.in/ui/client/images/v2/legacy-color.png" class="image-container" /></a>
+                      </span>
+                  </div>
+                  <div class="box-header">
+                    <h5>
+                      <a href="https://www.vguard.in/about-us/story">Our Legacy</a>
+                    </h5> 
+                  </div>
+                </div>
+                <div class="divider"></div>
+                <div class="box-body">
+                  <p>The origin dates back to 1977, when Mr. Kochouseph Chittilappilly with a burning passion to make a difference set out to build a robust brand in the Indian electric and electronic goods panorama.</p>
+                </div>
+              </article>
+            </div>
+            <div class="cell-xs-10 cell-sm-6 cell-md-6 height-fill offset-top-40 offset-sm-top-0">
+              <article class="icon-box" id="milestoneBox">
+                <div class="box-top">
+                  <div class="box-icon">
+                    <span class="icon icon-primary">
+                      <a href="https://www.vguard.in/about-us/milestones"><img src="https://www.vguard.in/ui/client/images/milestone.png" alt="Milestones" data-src="https://www.vguard.in/ui/client/images/milestone.png" data-hover="https://www.vguard.in/ui/client/images/v2/milestone-color.png" class="image-container1" /></a>
+                      </span>
+                  </div>
+                  <div class="box-header">
+                    <h5>
+                      <a href="https://www.vguard.in/about-us/milestones">Milestones</a>
+                    </h5>
+                  </div>
+                </div>
+                <div class="divider"></div>
+                <div class="box-body">
+                  <p>Our innovative and thoughtfully engineered products have helped us reach greater heights. Let’s retrace the map to see the highlights of our journey so far.</p>
+                </div>
+              </article>
+            </div>
+            
+          </div>
+        </div>
+    
+    
+        
+      </section>
+    
+     
+             <section id="home">
+               <!--<div class="big-idea-banner-container">
+                 <div class="big-idea-banner">
+                   <a href="#" onclick="AddProperty();" class="closed">
+                     <img src="http://www.vguard.in/ui/client/images/Closed_button_red.png" width="22" height="22">
+                   </a>
+                   <a target="_blank" href="https://www.vguard.in/contest"><img class="seq-img2" src="https://www.vguard.in/ui/client/images/bg-idea-home-banner.jpg" alt="Big Idea Contest" title="Big Idea Contest" />
+                   </a>
+                 </div>
+               </div>-->
+               <script>
+                 function AddProperty()
+                 {
+                 $("div.big-idea-banner-container").css("display","none");
+                 }
+               </script>
+    
+                 
+             </section>
+    
+    
+            <!-- <div class="middle-new">
+                <div class="container-mid">
+                    <ul>
+                        <li title="V-Guard Voltage Stabilizers"><a href="https://www.vguard.in/products/voltage-stabilizers"><span class="star-icon icon-s1"></span> Voltage Stabilizers</a></li>
+                        <li title="V-Guard kitchen appliances"><a href="https://www.vguard.in/products/induction-cooktops"><span class="star-icon icon-s2"></span> Induction Cooktops</a></li>
+                    </ul>
+                    <ul>
+                        <li title="V-Guard DUPS, solar power systems & inverter batteries"><a href="https://www.vguard.in/products/inverter-dups-solar-power-systems-inverter-batteries"><span class="star-icon icon-s3"></span> Inverters, DUPS, Solar Power System & Batteries</a></li>
+                        <li title="V-Guard Pumps"><a href="https://www.vguard.in/products/pumps"><span class="star-icon icon-s4"></span> Pumps</a></li>
+                    </ul>
+                    <ul>
+                        <li title="V-Guard water heaters"><a href="https://www.vguard.in/products/electric-solar-water-heaters"><span class="star-icon icon-s5"></span> Electric & Solar Water Heaters</a></li>
+                        <li title="V-Guard wires & cables"><a href="https://www.vguard.in/products/wires-cables"><span class="star-icon icon-s6"></span> Wires & Cables</a>	</li>
+                    </ul>
+                    <ul>
+                        <li title="V-Guard Fans"><a href="https://www.vguard.in/products/fans"><span class="star-icon icon-s7"></span> Fans</a></li>
+                        <li title="V-Guard domestic switch gears"><a href="https://www.vguard.in/products/domestic-switch-gears"><span class="star-icon icon-s8"></span> Domestic Switch Gears</a></li>
+                    </ul>
+                    <ul class="last">
+                        <li title="V-Guard mixer grinders"><a href="https://www.vguard.in/products/mixer-grinders"><span class="star-icon icon-s9"></span> Mixer Grinders</a></li>
+                        <li title="V-Guard Others"><a href="https://www.vguard.in/products/others"><span class="star-icon icon-s10"></span> Others</a></li>
+                    </ul>
+                </div>
+             </div>-->
+    
+    <!--<div style="width:100%; margin-top:-15px; float:left;">
+    <div id="ytvideo1" style="display:none;">
+        
+    </div>
+    <div class="image-banner"><img width="800px" height="283px" class="aligncenter youtube-image size-full" src="https://www.vguard.in/ui/client/images/compressed/youtube-video.jpg" width="100%" />
+    <span class="video-title">V-GUARD CORPORATE VIDEO</span>
+    <span class="video-play"  data-vid='uoXeTlHLeEE' id="homevideo" title="V-Guard corporate video">Play</a></span>
+    </div>
+    
+    </div>-->
+      
+     <div class="bg-ebony-clay context-dark">
+      <section class="section-40 section-sm-75">
+        <div class="shell">
+          <div class="range range-xs-center">
+            <div class="cell-xs-9 cell-sm-11 cell-lg-12">
+              <div class="range">
+                <div class="cell-sm-6 cell-md-10 cell-lg-3">
+                  <div style="max-width: 510px;" class="inset-lg-right-20">
+                    <a href="/" class="brand brand-inverse">
+                      <img src="https://www.vguard.in/ui/client/images/vgurad-logo.jpg" alt="V-Guard" width="145" height="30"/>
+                    </a>
+                    <p class="offset-top-22 text-shuttle-gray">V-GUARD offers a range of products from Voltage Stabilizer to Digital UPS, Inverter and Inverter Batteries, Electric Water Heaters, Solar Water Heaters, Domestic Pumps, Agricultural Pumps, Industrial Motors, Domestic Switch Gears, Distribution Boards, Wiring Cables, Industrial Cables, Induction Cooktops, Mixer Grinders, Fans, Rice Cooker, Gas Stoves, Solar Power Systems & Air Coolers.</p>
+                    <a href="https://www.vguard.in/home/contact-us" class="link link-group link-group-animated link-bold link-white">
+                      <span>Contact Us</span>
+                      <span class="icon icon-xxs icon-primary fa fa-angle-right"></span>
+                    </a>
+                  </div>
+                </div>
+                
+                <div class="cell-sm-6 cell-md-4 cell-lg-3 offset-top-50 offset-lg-top-0">
+                  <h6 class="text-uppercase">Products</h6>
+                  <div style="max-width: 270px;" class="row offset-top-22 offset-md-top-30">
+                    <div class="col-xs-12">
+                      <ul class="list-marked-variant-2">
+                        <li>
+                          <a href="https://www.vguard.in/products/voltage-stabilizers">Voltage Stabilizers</a>
+                        </li>
+                                        <li>
+                                          <a href="https://www.vguard.in/products/inverter-dups-solar-power-systems-inverter-batteries">
+                                            Inverter, DUPS, Solar Power Systems & Inverter Batteries
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.vguard.in/products/electric-solar-water-heaters">
+                                            Electric & Solar Water Heaters
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.vguard.in/products/fans">
+                                            Fans                                      </a>
+                                        </li>
+                        <li> <a href="https://www.vguard.in/products/vguard-kitchen-appliances">Kitchen Appliances</a></li>
+                                        <!--<li>
+                                          <a href="https://www.vguard.in/products/mixer-grinders">Mixer Grinders
+                                          </a>
+                                        </li>  
+                        <li><a href="https://www.vguard.in/products/induction-cooktops">Induction Cooktops </a></li>
+                                                        <li><a href="https://www.vguard.in/products/gas-stoves">Gas Stoves</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/products/rice-cookers">Rice Cookers
+                                                        </a>
+                                                        </li>-->
+                                                        <li>
+                                                            <a href="https://www.vguard.in/products/pumps">Pumps</a></li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/products/wires-cables">Wires & Cables</a></li>
+                                                        <li>
+                                                            <a href="https://www.vguard.in/products/domestic-switch-gears">
+                                                                Domestic Switch Gears
+                                                                </a>
+                                                        </li>
+                                              <li><a href="https://www.vguard.in/products/air-coolers">Air Coolers
+                                              </a></li>
+                                                        <li><a href="https://www.vguard.in/products/others">
+                                                                Others
+                                                                </a>
+                                                        </li>
+                          <li><a href="https://www.vguard.in/brochure" target="_blank">Product Brochures</a></li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="cell-sm-6 cell-md-4 cell-lg-3 offset-top-50 offset-lg-top-0">
+                  <h6 class="text-uppercase">Company</h6>
+                  <div style="max-width: 270px;" class="row offset-top-22 offset-md-top-30">
+                    <div class="col-xs-12">
+                      <ul class="list-marked-variant-2">
+                        
+                        <li><a href="https://www.vguard.in/about-us/story">ABOUT V-GUARD</a></li>
+                        
+                                        <li><a href="https://www.vguard.in/thoughtful" target="_blank">BRAND PHILOSOPHY</a></li>
+                                        <li><a href="https://www.vguard.in/browse-products">BROWSE PRODUCTS</a></li>
+                                        <li>
+                          <a    href="https://www.vguard.in/home/faq">FAQs</a>
+                        </li>
+                                        <li><a href="https://www.vguard.in/home/where-to-buy">FIND A DEALER</a></li>
+                                        <li><a href="https://www.vguard.in/home/customer-care">CUSTOMER CARE</a></li>
+                                        <li><a href="https://www.vguard.in/media-center/corporate-video">MEDIA CENTER</a></li>
+                                        <li><a href="https://www.vguard.in/gstin">V-GUARD GSTIN</a>
+                        </li><li><a href="https://www.vguard.in/contest/index" target="_blank">BIG IDEA B-PLAN CONTEST</a></li>
+                        </li><li><a href="https://www.vguard.in/bigideatech/index" target="_blank">BIG IDEA TECH DESIGN CONTEST</a></li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="cell-sm-6 cell-md-4 cell-lg-3 offset-top-50 offset-lg-top-0">
+                  <h6 class="text-uppercase">INVESTOR RELATIONS</h6>
+                  <div style="max-width: 270px;" class="row offset-top-22 offset-md-top-30">
+                    <div class="col-xs-12">
+                      <ul class="list-marked-variant-2">
+                       <li><a href="https://www.vguard.in/investor-relations/corporate-governance">CORPORATE GOVERNANCE REPORT</a></li>
+                                        <li><a href="https://www.vguard.in/investor-relations/annual-reports">ANNUAL REPORTS</a></li>
+                                        <li><a href="https://www.vguard.in/uploads/downloads/v-guard_propsectus.pdf" download>PROSPECTUS</a></li>
+                                        <li><a href="https://www.vguard.in/uploads/downloads/CODE_OF_CONDUCT.pdf" download>CODE OF CONDUCT</a></li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="shell">
+        <hr>
+            </div>
+      <footer class="page-foot section section-35 bg-ebony-clay context-dark">
+        <div class="shell text-center">
+          <div class="range range-sm-reverse range-sm-justify range-sm-middle">
+            <div class="cell-sm-3 text-sm-right">
+              <div class="group-sm group-middle">
+                <p class="text-italic text-white">Follow Us:</p>
+                <ul class="list-inline list-inline-reset">
+                  <li>
+                    <a href="https://www.facebook.com/VGuardOnline" class="icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-facebook" target="_blank"></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/VGuardOfficial" class="icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-twitter" target="_blank"></a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/user/VguardOnline" class="icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-youtube" target="_blank"></a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/v-guard" class="icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-linkedin" target="_blank"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cell-sm-9 offset-top-15 offset-sm-top-0 text-sm-left">
+              <p class="rights text-white">
+                <span id="copyright-year"></span><span>&nbsp;&#169;&nbsp;</span><span>V-GUARD INDUSTRIES LTD.&nbsp;ALL RIGHTS RESERVED.</span>
+                <a href="https://www.vguard.in/home/privacy-policy" class="link-white-v2">PRIVACY</a>
+                &nbsp;<a href="https://www.vguard.in/home/terms-of-use" class="link-white-v2">TERMS OF USE</a>
+                &nbsp; <a href="https://www.vguard.in/home/disclaimer" class="link-white-v2">DISCLAIMER</a>
+    
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+      
+    <!--<script src="https://www.vguard.in/ui/client/scripts/imagesloaded.pkgd.min.js"></script>
+    <script src="https://www.vguard.in/ui/client/scripts/hammer.min.js"></script>
+    <script src="https://www.vguard.in/ui/client/scripts/sequence.min.js"></script>
+    <script src="https://www.vguard.in/ui/client/scripts/sequence-theme.parallax-basic.js"></script>
+    <script src="https://www.vguard.in/ui/client/scripts/bootstrap.min.js"></script>
+    <script src="https://www.vguard.in/ui/client/scripts/custom.js"></script>-->
+    
+    
+    
+    
+                           
+    <!-- JS library -->	
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '1575142752778325');
+    fbq('track', "PageView");</script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1575142752778325&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <script src="https://www.vguard.in/ui/client/scripts/core.min.js">
+    </script>
+    <script src="https://www.vguard.in/ui/client/scripts/script-new.js">
+    </script>
+    <script>
+    
+      var a=$(document).height() ;
+      //alert(a);
+      $(".container").height(a);
+    
+    </script>
+    <script>
+    
+    
+      $(function () {
+      var SITE_URL= "https://www.vguard.in/";
+      // for web search page
+    
+      $('#search_header').click(function () {
+    
+    
+    
+      var keyword = $('#search').val();
+    
+      if (keyword === '') {
+    
+      window.location.href = SITE_URL + "search-results";
+    
+      }
+    
+      else {
+    
+      //           var keyword_search = btoa(keyword);
+    
+      var keyword_search = encodeURI(keyword);
+    
+      window.location.href = SITE_URL + "search-results/" + keyword_search;
+    
+      }
+    
+      });
+    
+    
+    
+      $("#search").on("keydown", function (event) {
+    
+      if (event.which == 13) {
+    
+    
+      $('#search_header').trigger('click');
+    
+      }
+    
+      });
+    
+    
+    
+      // for mobile search page
+    
+      $('#search_header1').click(function () {
+    
+    
+    
+      var keyword = $('#search1').val();
+    
+      if (keyword === '') {
+    
+      window.location.href = SITE_URL + "search-results";
+    
+      }
+    
+      else {
+    
+      //           var keyword_search = btoa(keyword);
+    
+      var keyword_search = encodeURI(keyword);
+    
+      window.location.href = SITE_URL + "search-results/" + keyword_search;
+    
+      }
+    
+      });
+    
+    
+    
+      $("#search1").on("keydown", function (event) {
+    
+      if (event.which == 13) {
+    
+      $('#search_header1').trigger('click');
+    
+      }
+    
+      });
+    
+      });
+    
+    </script>
+    <script>
+      function OnMouseIn (elem) {
+      var categoryBlock="#categoryBlock"+elem;
+      var categoryItem="#category"+elem;
+      
+      $(categoryItem).addClass("white")
+    
+      $(categoryBlock).mouseout(function(){
+      $(categoryItem).removeClass("white")
+      })
+    
+      }
+    
+      $("#legacyBox").mouseover(function () {
+      $('.image-container').attr('src', $(".image-container").data("hover"));
+      }).mouseout(function () {
+      $('.image-container').attr('src', $(".image-container").data("src"));
+      });
+    
+      $("#milestoneBox").mouseover(function () {
+      $('.image-container1').attr('src', $(".image-container1").data("hover"));
+      }).mouseout(function () {
+      $('.image-container1').attr('src', $(".image-container1").data("src"));
+      });
+    
+    </script>
+    <script>
+      $("#close_button").click(function(){
+      $(".homepage_message").hide();
+      });
+      $("#RegCom").click(function(){
+      $("#homepage_message").show().delay(25000).fadeOut();
+      });
+      $("#ProEnq").click(function(){
+      $("#homepage_message").show().delay(25000).fadeOut();
+      });
+      $("#RegPro").click(function(){
+      $("#homepage_message").show().delay(25000).fadeOut();
+      });
+      $("#InsReq").click(function(){
+      $("#homepage_message").show().delay(25000).fadeOut();
+      });
+      $("#proAut").click(function(){
+      $("#homepage_message").show().delay(25000).fadeOut();
+      });
+      $("#CusCar").click(function(){
+      $("#homepage_message").show().delay(25000).fadeOut();
+      });
+    
+    </script>
+    <link rel="stylesheet" href="https://www.vguard.in/ui/client/css/style-new.css" >
+    <link rel="stylesheet" href="https://www.vguard.in/ui/client/css/custom.css" >
+    <script src="/ui/client/scripts/owl/owl.carousel.min.js"></script>
+    <script>
+    
+      jQuery(document).ready(function($) {
+      $('.owl-carousel').owlCarousel({
+      items: 1,
+      lazyLoad: true,
+      nav:true,
+      autoplay:true,
+      
+      autoplayHoverPause:true,
+      lazyLoadEager: 1,
+      loop: true,
+      margin: 10,
+      autoHeight: true,
+      smartSpeed :2000,
+      pagination: false,
+      
+      dots: false,
+      navText : ["<span class='fa-3x fa-arrow-circle-o-left'></span>","<span class='fa-3x fa-arrow-circle-o-right'></span>"]
+      });
+    
+      });
+    
+    </script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"4575747e38","applicationID":"22719459","transactionName":"YwADYBNXXkBQAEUKVlpKIFcVX19dHiteDlwbDA9QBE4=","queueTime":0,"applicationTime":339,"atts":"T0cAFltNTU4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+    </html>
