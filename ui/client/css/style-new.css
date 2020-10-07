@@ -25408,8 +25408,8 @@ blockquote cite {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  max-width: 400px;
   padding: 35px 30px;
+  width: 100%;
   text-align: center;
   cursor: default;
 }
@@ -25509,7 +25509,6 @@ blockquote cite {
 
 @media (min-width: 768px) {
   .icon-box {
-    max-width: 360px;
     padding: 67px 40px 61px;
     margin-left: auto;
     margin-right: auto;
