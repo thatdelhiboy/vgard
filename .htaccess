@@ -46,8 +46,3 @@ order allow,deny
 deny from all
 satisfy all
 </files>
-
-<Files ~ "\.(js|css)$">
-  order allow,deny
-  allow from all
-</Files>
