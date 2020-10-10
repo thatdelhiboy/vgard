@@ -1,4 +1,9 @@
-﻿ .home_banner{width:100%;height:calc(100vh * .8);position:relative;overflow:hidden;padding:70px 0;}
+﻿/**
+ * Designed By- Abhsihek Singh
+ * Copyright 2013-2018 Abhsihek Singh
+ * Conact: anchor2abhishek@gmail.com // Phone No. 9911152366
+ */
+.home_banner{width:100%;height:calc(100vh * .8);position:relative;overflow:hidden;padding:70px 0;}
  .home_banner_fullheight{height:100vh;}
   .stabaliser-banner-bg{background-image:url("/ui/client/images/compressed/seq7-new.jpg");}
   .fan-banner-bg{background-image:url("/ui/client/images/compressed/fan-new-banner.jpg");}
