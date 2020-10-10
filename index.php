@@ -728,9 +728,8 @@
         $("#homepage_message").show().delay(25000).fadeOut();
       });
     </script>
-    <style>
-      <?php include "./ui/client/css/custom.php";?>
-    </style>
+
+    <link rel="stylesheet" href="/ui/client/css/custom.css">
     <script src="/ui/client/scripts/owl/owl.carousel.min.js"></script>
     
     <script>
