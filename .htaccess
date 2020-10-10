@@ -30,5 +30,6 @@ AddOutputFilterByType DEFLATE application/x-javascript
 
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^rehaaninternational\.com [NC]
+RewriteCond %{HTTP_HOST} ^www.rehaaninternational\.com [NC]
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.rehaaninternational.com/$1 [R,L]
