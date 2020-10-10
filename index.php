@@ -320,7 +320,7 @@
 
     <!-- owl          -->
     <link rel="stylesheet" href="./ui/client/css/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="/ui/client/css/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./ui/client/css/owl/owl.theme.default.min.css">
     <input type="hidden" id="refreshed" value="no">
 
     <slider>
@@ -728,7 +728,9 @@
         $("#homepage_message").show().delay(25000).fadeOut();
       });
     </script>
-    <link rel="stylesheet" href="/ui/client/css/custom.css">
+    <style>
+      <?php include "./ui/client/css/custom.php";?>
+    </style>
     <script src="/ui/client/scripts/owl/owl.carousel.min.js"></script>
     
     <script>
