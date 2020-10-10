@@ -666,6 +666,9 @@ a.fancybox {display:block;min-height:300px !important;width:100% !important;
         outline:none !important;
         width:100%;
     }
+    .vgurad-logo {
+        width:50%;
+    }
 }
 @media (max-width: 480px) {
     .cc_contact_us_header{width:100%;}
