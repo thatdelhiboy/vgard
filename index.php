@@ -326,32 +326,56 @@
     <slider>
 
       <div class="owl-carousel owl-theme">
-        <a href="#">
+        <a href="#"><!-- Interter  -->
           <div class="item">
             <picture>
               <source class="owl-lazy" media="(max-width: 480px)"
-                data-srcset="/ui/client/images/compressed/vguard-all-products-mob.jpg" />
-              <!-- 1400*525  -->
-              <img class="owl-lazy" data-src="/ui/client/images/compressed/vguard-all-products.jpg"
+                data-srcset="/ui/client/images/compressed/livepure-inverter-mob.jpg" />
+              
+              <img class="owl-lazy" data-src="/ui/client/images/compressed/livepure-inverter.jpg"
                 alt="Vguard Products" />
             </picture>
             <div class="slider-content-container">
             </div>
           </div>
         </a>
-        <a href="#">
+        <a href="#"><!-- water geser  -->
           <div class="item">
             <picture>
               <source class="owl-lazy" media="(max-width: 480px)"
-                data-srcset="/ui/client/images/compressed/vguard-inverter-mob.jpg" />
-              <img class="owl-lazy" data-src="/ui/client/images/compressed/vguard-inverter.jpg"
+                data-srcset="/ui/client/images/compressed/watergeaser_banner-mob.jpg" />
+              <img class="owl-lazy" data-src="/ui/client/images/compressed/watergeaser_banner.jpg"
                 alt="Vguard Inverters" />
             </picture>
             <div class="slider-content-container">
             </div>
           </div>
         </a>
-
+        
+        <a href="#"><!-- Room heater  -->
+          <div class="item">
+            <picture>
+              <source class="owl-lazy" media="(max-width: 480px)"
+                data-srcset="/ui/client/images/compressed/watergeaser_banner-mob.jpg" />
+              <img class="owl-lazy" data-src="/ui/client/images/compressed/livepure-roomheater.jpg"
+                alt="Vguard Inverters" />
+            </picture>
+            <div class="slider-content-container">
+            </div>
+          </div>
+        </a>
+        <a href="#"><!-- WASHING MACHINE  -->
+          <div class="item">
+            <picture>
+              <source class="owl-lazy" media="(max-width: 480px)"
+                data-srcset="/ui/client/images/compressed/livepure-inverter-mob.jpg" />
+              <img class="owl-lazy" data-src="/ui/client/images/compressed/livepure-washingmachine.jpg"
+                alt="Vguard Inverters" />
+            </picture>
+            <div class="slider-content-container">
+            </div>
+          </div>
+        </a>
       </div>
 
     </slider>
