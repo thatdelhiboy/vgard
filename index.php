@@ -24,7 +24,7 @@
 
 <!-- test  -->
 <style>
-<?php include "./ui/client/css/style-new.php";?>
+<?php include "./ui/client/css/style_new.php";?>
 </style>
   <!-- <link rel="stylesheet" href="/ui/client/css/style-new.css"> -->
   <link rel="stylesheet" href="/ui/client/css/home-banner.css">
