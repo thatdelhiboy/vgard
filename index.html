@@ -723,7 +723,7 @@
       });
     </script>
     <link rel="stylesheet" href="/ui/client/css/custom.css">
-    <script src="/ui/client/scripts/owl/owl.carousel.min.js"></script>
+    <!-- <script src="/ui/client/scripts/owl/owl.carousel.min.js"></script> -->
     <script>
       jQuery(document).ready(function ($) {
         $('.owl-carousel').owlCarousel({
@@ -748,6 +748,15 @@
 
       });
     </script>
+    <script defer="defer" type="text/javascript">
+      window.onload=function(){
+          var mycode;
+          mycode=document.createElement("script");
+          mycode.type="text/javascript";
+          mycode.src="/ui/client/scripts/owl/owl.carousel.min.js";
+          document.getElementsByTagName("head")[0].appendChild(mycode);
+      }
+  </script>
 
 </body>
 
