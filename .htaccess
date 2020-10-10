@@ -51,9 +51,3 @@ satisfy all
   order allow,deny
   allow from all
 </Files>
-
-deny from all
-    <Files ~ "^\w+\.(gif|jpe?g|png)$">
-    order deny,allow
-    allow from all
-    </Files>
