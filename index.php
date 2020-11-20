@@ -14,11 +14,11 @@
   <link rel="preload" href="/ui/client/fonts/Soleto-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="/ui/client/fonts/Soleto-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="/ui/client/fonts/Soleto-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
-  <link rel="preload" href="/ui/client/fonts/fontawesome-webfont.woff" as="font" type="font/woff"
-    crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="/ui/client/fonts/fontawesome-webfont.woff" as="font" type="font/woff" crossorigin="anonymous"> -->
   <link rel=canonical href='#'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel=stylesheet type=text/css> <link rel="shortcut icon"
-    href="/ui/client/images/pin1.png" type=image/x-icon />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel=stylesheet type=text/css> 
+  <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel=stylesheet type=text/css> 
+  <link rel="shortcut icon" href="/ui/client/images/pin1.png" type=image/x-icon />
 
 
 
