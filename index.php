@@ -136,8 +136,8 @@
             <div class="rd-navbar-group">
               <div class="rd-navbar-panel">
                 <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
-                <a class="vgurad-logo-link" href='/'><img src="/ui/client/images/logo.png" width="180px"
-                    alt="Livpower Industries" title="Livpower Industries" class="vgurad-logo"></a>
+                <a class="rehan-logo-link" href='/'><img src="/ui/client/images/logo.png" width="180px"
+                    alt="Livpower Industries" title="Livpower Industries" class="rehan-logo"></a>
               </div>
               <div class="rd-navbar-group-asside">
                 <div class="rd-navbar-nav-wrap">
@@ -500,7 +500,7 @@
                 <div class="cell-sm-6 cell-md-10 cell-lg-6">
                   <div style="max-width: 510px;" class="inset-lg-right-20">
                     <a href="/" class="brand brand-inverse">
-                      <img src="/ui/client/images/vgurad-logo.jpg" alt="Livpower" width="145" height="30" />
+                      <img src="/ui/client/images/rehan-logo.jpg" alt="Livpower" width="145" height="30" />
                     </a>
                     <p class="offset-top-22 text-shuttle-gray">Livpower offers a range of products from Voltage
                       Stabilizer to Digital UPS, Inverter and Inverter Batteries, Electric Water Heaters, Solar Water

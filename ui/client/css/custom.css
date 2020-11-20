@@ -637,13 +637,13 @@ a.fancybox {display:block;min-height:300px !important;width:100% !important;
 }
 
 @media (max-width: 1024px) {
-    .vgurad-logo-link {
+    .rehan-logo-link {
         z-index:1;
         margin-left:auto;
         margin-right:auto;
         padding-left:35px;
     }
-    .vgurad-logo {
+    .rehan-logo {
         width:50%;
     }
 }
@@ -667,7 +667,7 @@ a.fancybox {display:block;min-height:300px !important;width:100% !important;
         outline:none !important;
         width:100%;
     }
-    .vgurad-logo {
+    .rehan-logo {
         width:50%;
     }
 }
