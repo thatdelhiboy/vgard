@@ -1,5 +1,5 @@
 <?php include "./include/header.php";?>
-<body>
+
   <div class="page">
     <div class="page-loader page-loader-variant-1">
       <div>
