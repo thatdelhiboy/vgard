@@ -18,7 +18,7 @@
   <link rel=canonical href='#'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel=stylesheet type=text/css> 
   <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel=stylesheet type=text/css> 
-  <link rel="shortcut icon" href="/ui/client/images/pin1.png" type=image/x-icon />
+  <link rel="shortcut icon" href="/ui/client/images/rehan-logo.jpg" type=image/x-icon />
 
 
 
