@@ -5,12 +5,8 @@
         <h1 class="orange" >About Us</h1>
         <div class="range range-xs-center offset-top-40">
           <div class="cell-xs-10 cell-sm-12 cell-md-12 height-fill">
-            <article class="icon-box" id="legacyBox">
-              <div class="box-body">
-              <embed src="https://www.rehaaninternational.com/Livpower%20Voltage%20Brochure.pdf" width="100%" height="600px" 
+          <embed src="https://www.rehaaninternational.com/Livpower%20Voltage%20Brochure.pdf" width="100%" height="600px" 
  type="application/pdf">
-              </div>
-            </article>
           </div>
         </div>
       </div>
