@@ -1,6 +1,5 @@
 <?php
   $_GET['q'] = $product; 
-  echo $product; 
 ?>
 
 
@@ -8,7 +7,7 @@
 
 <section class="section-50 section-sm-90 brandPhilosophySection" id="aboutus">
       <div class="shell text-center">
-        <h1 class="orange" >Brochure</h1>
+        <h1 class="orange" ><?php echo($product) ; ?> Brochure</h1>
         <div class="range range-xs-center offset-top-40">
           <div class="cell-xs-10 cell-sm-12 cell-md-12 height-fill">
           <embed src="https://drive.google.com/viewerng/
