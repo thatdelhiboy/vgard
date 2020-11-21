@@ -420,14 +420,9 @@
               </div>
             </article>
           </div>
-
-
         </div>
       </div>
-
-
-
-    </section>
+</section>
 
 
     <?php include "./include/footer.php";?>
