@@ -1,3 +1,9 @@
+<?php
+  $_GET['q'] = $product; 
+  echo $product; 
+?>
+
+
 <?php include "./include/header.php";?>
 
 <section class="section-50 section-sm-90 brandPhilosophySection" id="aboutus">
