@@ -1,5 +1,5 @@
 <?php
-  $_GET['q'] = $product; 
+  $product = $_GET['q']; 
 ?>
 
 
